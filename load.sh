@@ -6,7 +6,9 @@ fi
 _atrocity_base="$(dirname -- "$(readlink -f -- _atrocity_init_file)")"
 
 source "$_atrocity_base"/logger.sh
+source "$_atrocity_base"/events.sh
 source "$_atrocity_base"/connect.sh
+source "$_atrocity_base"/rest.sh
 
 atrocity_debug "Loaded atrocity from $_atrocity_base"
 _atrocity_prepare
